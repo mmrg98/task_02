@@ -2,8 +2,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 
-def task2(request):
+def msg(request):
     context = {
-        "msg": "Hello world",
+        "msg": "Hello World!",
     }
     return render(request, 'msg.html', context)
